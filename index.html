@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plateful — Marketing Plan 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --red:#E53935; --red-d:#b71c1c; --red-l:#ffcdd2;
+  --orange:#F59E0B; --orange-d:#b45309; --orange-l:#fef3c7;
+  --cream:#FFF7F3; --cream-d:#fde8d8;
+  --charcoal:#2D2D2D; --charcoal-l:#4a4a4a;
+  --gold:#FFD700; --green:#2e7d32; --blue:#1565c0;
+  --r:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);font-family:'Instrument Sans',sans-serif;color:var(--charcoal);overflow-x:hidden}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,247,243,0.92);backdrop-filter:blur(12px);border-bottom:1px solid #f0ddd0;padding:0 32px;height:56px;display:flex;align-items:center;gap:0}
+.nav-logo{font-family:'Fraunces',serif;font-weight:900;font-size:18px;color:var(--red);margin-right:28px}
+.nav-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{font-size:12px;font-weight:600;color:#888;text-decoration:none;padding:6px 12px;border-radius:100px;white-space:nowrap;transition:all .2s}
+.nav-links a:hover,.nav-links a.active{background:var(--red);color:white}
+.nav-date{margin-left:auto;font-size:11px;color:#bbb;font-weight:500;white-space:nowrap}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 60px;position:relative;overflow:hidden;background:linear-gradient(160deg,#fff7f3 0%,#ffe8d8 50%,#fff0e8 100%)}
+.hero-bg-circle{position:absolute;border-radius:50%;pointer-events:none}
+.hbc1{width:600px;height:600px;background:radial-gradient(circle,rgba(229,57,53,0.08),transparent 70%);top:-100px;right:-100px;animation:pulse 6s ease-in-out infinite}
+.hbc2{width:400px;height:400px;background:radial-gradient(circle,rgba(245,158,11,0.10),transparent 70%);bottom:-80px;left:-80px;animation:pulse 8s ease-in-out infinite 2s}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:white;border:1.5px solid #f0d0c0;border-radius:100px;padding:6px 16px;font-size:12px;font-weight:700;color:var(--red);letter-spacing:.5px;margin-bottom:28px;box-shadow:0 2px 12px rgba(229,57,53,.08)}
+.hero-tag span{width:7px;height:7px;border-radius:50%;background:var(--red);display:inline-block;animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+h1.hero-title{font-family:'Fraunces',serif;font-size:clamp(42px,7vw,88px);font-weight:900;line-height:1.0;letter-spacing:-3px;color:var(--charcoal);max-width:900px}
+h1.hero-title .accent{color:var(--red)}
+h1.hero-title .accent2{color:var(--orange)}
+.hero-sub{font-size:17px;color:#5a4030;margin-top:20px;max-width:520px;line-height:1.7}
+.hero-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:32px}
+.chip{padding:8px 18px;border-radius:100px;font-size:13px;font-weight:600;border:2px solid}
+.chip-red{background:var(--red);color:white;border-color:var(--red)}
+.chip-out{background:transparent;color:var(--charcoal);border-color:#ddd}
+
+/* hero mascots */
+.hero-mascots{display:flex;gap:24px;justify-content:center;margin-top:48px;flex-wrap:wrap}
+.hero-mascots svg{filter:drop-shadow(0 8px 24px rgba(0,0,0,.12))}
+.float1{animation:floatA 3.2s ease-in-out infinite}
+.float2{animation:floatA 3.7s ease-in-out infinite .4s}
+.float3{animation:floatA 3.0s ease-in-out infinite .8s}
+@keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+.scroll-hint{margin-top:40px;font-size:12px;color:#bbb;font-weight:500;display:flex;flex-direction:column;align-items:center;gap:6px}
+.scroll-hint::after{content:'';width:1px;height:32px;background:linear-gradient(to bottom,#ddd,transparent)}
+
+/* ── SECTION SHELLS ── */
+section{padding:80px 24px;max-width:1100px;margin:0 auto}
+section.full{max-width:100%;padding:80px 0}
+section.full .inner{max-width:1100px;margin:0 auto;padding:0 24px}
+
+.sec-label{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--orange);margin-bottom:12px}
+.sec-title{font-family:'Fraunces',serif;font-size:clamp(28px,4vw,44px);font-weight:900;letter-spacing:-1px;line-height:1.1;margin-bottom:8px;color:var(--charcoal)}
+.sec-sub{font-size:15px;color:#5a4030;line-height:1.7;max-width:640px;margin-bottom:40px}
+
+/* divider */
+.divider{height:2px;background:linear-gradient(90deg,transparent,var(--red-l),transparent);margin:0 24px}
+
+/* ── BRAND SECTION ── */
+.brand-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.brand-card{background:white;border-radius:var(--r);padding:28px;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+.brand-card.span2{grid-column:span 2}
+.brand-card h4{font-family:'Fraunces',serif;font-size:18px;font-weight:900;margin-bottom:12px}
+.brand-card p{font-size:14px;color:#4a3828;line-height:1.7}
+.color-swatches{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.swatch{width:52px;height:52px;border-radius:12px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px;font-size:9px;font-weight:700;color:white;box-shadow:0 2px 8px rgba(0,0,0,.15);text-shadow:0 1px 2px rgba(0,0,0,.3)}
+.voice-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.vpill{padding:6px 14px;border-radius:100px;font-size:12px;font-weight:600}
+.vp-red{background:var(--red-l);color:var(--red-d)}
+.vp-org{background:var(--orange-l);color:var(--orange-d)}
+.vp-grn{background:#e8f5e9;color:#1b5e20}
+
+/* ── MASCOTS SECTION ── */
+.mascot-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.mascot-card{background:white;border-radius:var(--r);overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06);text-align:center;transition:transform .25s,box-shadow .25s;cursor:default}
+.mascot-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,.12)}
+.mascot-vis{height:240px;display:flex;align-items:center;justify-content:center}
+.mascot-info{padding:14px 16px 18px}
+.mascot-info h4{font-family:'Fraunces',serif;font-size:16px;font-weight:900;margin-bottom:4px;color:var(--charcoal)}
+.mascot-info p{font-size:11.5px;color:#5a4030;line-height:1.6}
+.mascot-role{display:inline-block;margin-top:8px;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--red)}
+
+/* ── TARGET AUDIENCE ── */
+.tg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tg-card{border-radius:var(--r);padding:28px;color:white;position:relative;overflow:hidden}
+.tg-card::before{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.08)}
+.tg-emoji{font-size:36px;margin-bottom:16px;display:block}
+.tg-card h4{font-family:'Fraunces',serif;font-size:20px;font-weight:900;margin-bottom:8px}
+.tg-card p{font-size:13px;line-height:1.65;opacity:.9}
+.tg-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.tg-pill{padding:4px 10px;border-radius:100px;font-size:10px;font-weight:700;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3)}
+.tg1{background:linear-gradient(135deg,#E53935,#b71c1c)}
+.tg2{background:linear-gradient(135deg,#F59E0B,#b45309)}
+.tg3{background:linear-gradient(135deg,#2e7d32,#1b5e20)}
+
+/* ── POSITIONING ── */
+.pos-big{background:var(--charcoal);border-radius:24px;padding:52px;color:white;text-align:center;position:relative;overflow:hidden}
+.pos-big::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(229,57,53,.15),transparent 60%),radial-gradient(circle at 80% 50%,rgba(245,158,11,.12),transparent 60%)}
+.pos-big h3{font-family:'Fraunces',serif;font-size:clamp(22px,3vw,36px);font-weight:900;line-height:1.3;position:relative;max-width:700px;margin:0 auto}
+.pos-big p{font-size:15px;color:#aaa;margin-top:16px;max-width:560px;margin-inline:auto;line-height:1.7;position:relative}
+.vs-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.vs-card{border-radius:14px;padding:24px}
+.vs-bad{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+.vs-good{background:rgba(229,57,53,.15);border:1px solid rgba(229,57,53,.3)}
+.vs-card h5{font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;opacity:.6}
+.vs-card ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.vs-card ul li{font-size:13px;line-height:1.5;display:flex;gap:8px;align-items:flex-start}
+.vs-card ul li::before{content:'✗';color:#ff5252;font-weight:700;flex-shrink:0}
+.vs-good ul li::before{content:'✓';color:#69f0ae}
+
+/* ── TIMELINE / MILESTONES ── */
+.timeline{position:relative;padding-left:0}
+.tl-phase{display:grid;grid-template-columns:200px 1fr;gap:0;margin-bottom:4px}
+.tl-label{background:var(--charcoal);color:white;border-radius:14px 0 0 14px;padding:24px 20px;display:flex;flex-direction:column;justify-content:center}
+.tl-label .phase-name{font-family:'Fraunces',serif;font-size:16px;font-weight:900}
+.tl-label .phase-date{font-size:11px;color:#fde8d8;margin-top:4px;opacity:0.85}
+.tl-label .phase-goal{font-size:11px;color:var(--orange);margin-top:6px;font-weight:600}
+.tl-body{background:white;border-radius:0 14px 14px 0;padding:24px 28px;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.tl-item{background:var(--cream);border-radius:10px;padding:12px 14px}
+.tl-item .ti-week{font-size:10px;font-weight:700;color:var(--orange);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.tl-item .ti-task{font-size:13px;font-weight:600;color:var(--charcoal);line-height:1.4}
+.tl-item .ti-note{font-size:11px;color:#b45309;margin-top:3px;font-weight:500}
+.phase-red .tl-label{background:linear-gradient(135deg,var(--red),var(--red-d))}
+.phase-org .tl-label{background:linear-gradient(135deg,var(--orange),var(--orange-d))}
+.phase-grn .tl-label{background:linear-gradient(135deg,#2e7d32,#1b5e20)}
+
+/* ── MILESTONE METRICS ── */
+.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.metric-card{background:white;border-radius:var(--r);padding:24px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,.06);border-top:4px solid}
+.metric-card .m-val{font-family:'Fraunces',serif;font-size:36px;font-weight:900;line-height:1}
+.metric-card .m-label{font-size:12px;color:#888;margin-top:6px;line-height:1.5}
+.metric-card .m-by{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:8px}
+.mc1{border-color:var(--red)} .mc2{border-color:var(--orange)} .mc3{border-color:#2e7d32} .mc4{border-color:#1565c0}
+
+/* ── CHANNELS ── */
+.channels-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ch-card{background:white;border-radius:var(--r);padding:24px;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+.ch-icon{font-size:28px;margin-bottom:10px}
+.ch-card h4{font-family:'Fraunces',serif;font-size:17px;font-weight:900;margin-bottom:6px}
+.ch-card p{font-size:13px;color:#4a3828;line-height:1.65}
+.ch-priority{display:inline-block;margin-top:10px;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 10px;border-radius:100px}
+.pri-1{background:#ffebee;color:var(--red-d)}
+.pri-2{background:var(--orange-l);color:var(--orange-d)}
+.pri-3{background:#f3f4f6;color:#555}
+.ch-kpi{margin-top:12px;padding-top:12px;border-top:1px solid #f0f0f0;font-size:12px;color:#6b4226}
+.ch-kpi strong{color:var(--charcoal);font-weight:600}
+
+/* ── INFLUENCER ── */
+.inf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.inf-card{border-radius:var(--r);overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+.inf-top{padding:22px;color:white}
+.inf-top h4{font-family:'Fraunces',serif;font-size:18px;font-weight:900;margin-bottom:4px}
+.inf-top .inf-size{font-size:12px;opacity:.8;margin-bottom:10px}
+.inf-top p{font-size:13px;opacity:.9;line-height:1.6}
+.inf-bot{background:white;padding:18px 22px}
+.inf-do{font-size:12px;color:#4a3828;line-height:1.6}
+.inf-do strong{color:var(--charcoal);display:block;margin-bottom:4px;font-size:11px;letter-spacing:1px;text-transform:uppercase}
+.inf-t1{background:linear-gradient(135deg,#E53935,#880e4f)}
+.inf-t2{background:linear-gradient(135deg,#F59E0B,#e65100)}
+.inf-t3{background:linear-gradient(135deg,#1565c0,#004d40)}
+
+/* ── ADS ── */
+.ads-honest{background:linear-gradient(135deg,#fff7f3,#fde8d8);border-radius:24px;padding:40px;border:2px solid var(--red-l);margin-bottom:32px}
+.ads-honest h3{font-family:'Fraunces',serif;font-size:24px;font-weight:900;margin-bottom:12px}
+.ads-honest p{font-size:14px;color:#666;line-height:1.7;max-width:680px}
+.ads-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ad-card{background:white;border-radius:var(--r);padding:24px;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+.ad-card h4{font-family:'Fraunces',serif;font-size:17px;font-weight:900;margin-bottom:8px}
+.ad-card p{font-size:13px;color:#4a3828;line-height:1.65}
+.ad-budget{margin-top:14px;padding:10px 14px;background:var(--cream-d);border-radius:8px;font-size:12px;font-weight:600;color:var(--charcoal)}
+
+/* ── CREATIVES ── */
+.creative-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.creative-card{border-radius:var(--r);overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+.cc-top{height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:40px;gap:8px;position:relative}
+.cc-top .cc-label{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:white;background:rgba(0,0,0,.25);padding:3px 10px;border-radius:100px}
+.cc-bot{background:white;padding:18px 20px}
+.cc-bot h4{font-family:'Fraunces',serif;font-size:16px;font-weight:900;margin-bottom:6px}
+.cc-bot p{font-size:12.5px;color:#4a3828;line-height:1.6}
+.cc-type{display:inline-block;margin-top:8px;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:6px}
+.ct-ugc{background:#e8f5e9;color:#1b5e20}
+.ct-ai{background:#e3f2fd;color:#0d47a1}
+.ct-brand{background:var(--orange-l);color:var(--orange-d)}
+
+/* ── SOCIAL SETUP ── */
+.social-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.social-card{background:white;border-radius:var(--r);padding:24px;box-shadow:0 2px 16px rgba(0,0,0,.06);display:flex;gap:16px;align-items:flex-start}
+.social-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.social-card h4{font-family:'Fraunces',serif;font-size:16px;font-weight:900;margin-bottom:4px}
+.social-card p{font-size:12.5px;color:#4a3828;line-height:1.6}
+.social-handle{font-size:12px;font-weight:700;color:var(--red);margin-top:6px}
+
+/* ── DATA SECTION ── */
+.data-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.data-card{background:white;border-radius:var(--r);padding:24px;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+.data-card h4{font-family:'Fraunces',serif;font-size:16px;font-weight:900;margin-bottom:16px}
+.bar-row{display:flex;flex-direction:column;gap:10px}
+.bar-item{display:flex;flex-direction:column;gap:4px}
+.bar-label{display:flex;justify-content:space-between;font-size:12px;font-weight:600}
+.bar-track{height:8px;background:#f0f0f0;border-radius:100px;overflow:hidden}
+.bar-fill{height:100%;border-radius:100px;transition:width 1s ease}
+
+/* ── UGC vs AI ── */
+.split-card{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--r);overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+.split-half{padding:32px}
+.split-half h4{font-family:'Fraunces',serif;font-size:20px;font-weight:900;margin-bottom:12px}
+.split-half ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.split-half ul li{font-size:13px;line-height:1.5;display:flex;gap:8px}
+.split-half ul li::before{flex-shrink:0;font-weight:700}
+.ugc-side{background:#e8f5e9}
+.ugc-side ul li::before{content:'✓';color:#2e7d32}
+.ai-side{background:#e3f2fd}
+.ai-side ul li::before{content:'✓';color:#1565c0}
+.verdict{background:var(--charcoal);color:white;padding:24px 32px;text-align:center}
+.verdict p{font-size:14px;line-height:1.7;max-width:600px;margin:0 auto}
+.verdict strong{color:var(--orange)}
+
+/* ── FOOD EMOJI ILLUSTRATIONS ── */
+.food-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:24px 0}
+.food-bubble{width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 4px 16px rgba(0,0,0,.1)}
+
+/* ── DO/DON'T ── */
+.dodo-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.dodo-card{border-radius:var(--r);padding:28px}
+.do-card{background:#e8f5e9;border:2px solid #a5d6a7}
+.dont-card{background:#ffebee;border:2px solid #ef9a9a}
+.dodo-card h4{font-family:'Fraunces',serif;font-size:18px;font-weight:900;margin-bottom:14px}
+.dodo-card ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.dodo-card ul li{font-size:13.5px;line-height:1.5;display:flex;gap:10px;align-items:flex-start}
+.do-card ul li::before{content:'✓';color:#2e7d32;font-weight:900;flex-shrink:0}
+.dont-card ul li::before{content:'✗';color:#c62828;font-weight:900;flex-shrink:0}
+
+/* ── FOOTER ── */
+footer{background:var(--charcoal);color:white;text-align:center;padding:52px 24px}
+footer .f-logo{font-family:'Fraunces',serif;font-size:36px;font-weight:900;color:var(--red);margin-bottom:8px}
+footer p{font-size:14px;color:#888;line-height:1.7}
+footer .f-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px}
+footer .f-chip{padding:6px 14px;border-radius:100px;font-size:11px;font-weight:600;border:1px solid #444;color:#aaa}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  .brand-grid,.tg-grid,.metrics-grid,.channels-grid,.inf-grid,.creative-grid,.data-grid,.dodo-grid{grid-template-columns:1fr 1fr}
+  .mascot-row{grid-template-columns:1fr 1fr}
+  .tl-phase{grid-template-columns:1fr}
+  .tl-label{border-radius:14px 14px 0 0}
+  .tl-body{border-radius:0 0 14px 14px}
+  .ads-grid,.social-grid,.vs-grid,.split-card{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .brand-grid,.tg-grid,.metrics-grid,.channels-grid,.inf-grid,.creative-grid,.data-grid,.dodo-grid{grid-template-columns:1fr}
+  .brand-card.span2{grid-column:span 1}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Plateful</div>
+  <div class="nav-links">
+    <a href="#brand">Brand</a>
+    <a href="#mascots">Mascots</a>
+    <a href="#audience">Audience</a>
+    <a href="#positioning">Positioning</a>
+    <a href="#plan">Plan</a>
+    <a href="#milestones">Milestones</a>
+    <a href="#channels">Channels</a>
+    <a href="#influencers">Influencers</a>
+    <a href="#ads">Ads</a>
+    <a href="#creatives">Creatives</a>
+    <a href="#social">Social</a>
+    <a href="#data">Data</a>
+  </div>
+  <div class="nav-date">Launch: May 1, 2026</div>
+</nav>
+
+<!-- HERO -->
+<div id="hero">
+  <div class="hero-bg-circle hbc1"></div>
+  <div class="hero-bg-circle hbc2"></div>
+  <div class="hero-tag"><span></span> Confidential Marketing Plan · 2026</div>
+  <h1 class="hero-title">The Cooking App<br>That <span class="accent">Decides</span> for<br><span class="accent2">You.</span></h1>
+  <p class="hero-sub">A complete go-to-market strategy for Plateful — from brand foundation to 10,000 active users by July 2026.</p>
+  <div class="hero-chips">
+    <div class="chip chip-red">Launch May 1</div>
+    <div class="chip chip-out">10K MAU Goal</div>
+    <div class="chip chip-out">US First</div>
+    <div class="chip chip-out">₹15K/mo Budget</div>
+    <div class="chip chip-out">Organic-First</div>
+  </div>
+
+  <!-- V1 style mascots in hero -->
+  <div class="hero-mascots">
+    <!-- Platey -->
+    <svg class="float1" width="110" height="140" viewBox="0 0 170 210">
+      <defs>
+        <radialGradient id="hpb" cx="30%" cy="25%"><stop offset="0%" stop-color="#ffe0a0"/><stop offset="60%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#7c4f00"/></radialGradient>
+        <radialGradient id="hph" cx="35%" cy="30%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#ccd5de"/></radialGradient>
+        <radialGradient id="hpa" cx="30%" cy="20%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#c8c8c8"/></radialGradient>
+      </defs>
+      <ellipse cx="85" cy="178" rx="62" ry="14" fill="url(#hpa)" stroke="#2D2D2D" stroke-width="2.5"/>
+      <ellipse cx="85" cy="173" rx="62" ry="14" fill="url(#hpa)" stroke="#2D2D2D" stroke-width="2.5"/>
+      <ellipse cx="85" cy="130" rx="58" ry="52" fill="url(#hpb)" stroke="#2D2D2D" stroke-width="2.5"/>
+      <ellipse cx="66" cy="108" rx="16" ry="12" fill="white" opacity="0.2"/>
+      <ellipse cx="85" cy="76" rx="32" ry="8" fill="url(#hph)" stroke="#2D2D2D" stroke-width="2"/>
+      <rect x="58" y="50" width="54" height="30" rx="5" fill="url(#hph)" stroke="#2D2D2D" stroke-width="2"/>
+      <ellipse cx="85" cy="44" rx="30" ry="20" fill="url(#hph)" stroke="#2D2D2D" stroke-width="2"/>
+      <ellipse cx="69" cy="36" rx="19" ry="14" fill="url(#hph)" stroke="#2D2D2D" stroke-width="1.5"/>
+      <ellipse cx="101" cy="36" rx="19" ry="14" fill="url(#hph)" stroke="#2D2D2D" stroke-width="1.5"/>
+      <ellipse cx="74" cy="32" rx="9" ry="6" fill="white" opacity="0.45"/>
+      <rect x="58" y="69" width="54" height="7" rx="2" fill="#E53935" opacity="0.85"/>
+      <ellipse cx="73" cy="124" rx="8" ry="9" fill="#2D2D2D"/>
+      <ellipse cx="97" cy="124" rx="8" ry="9" fill="#2D2D2D"/>
+      <ellipse cx="76" cy="121" rx="3" ry="3.5" fill="white"/>
+      <ellipse cx="100" cy="121" rx="3" ry="3.5" fill="white"/>
+      <path d="M70 138 Q85 150 100 138" stroke="#2D2D2D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <ellipse cx="62" cy="133" rx="9" ry="6" fill="#ffb347" opacity="0.5"/>
+      <ellipse cx="108" cy="133" rx="9" ry="6" fill="#ffb347" opacity="0.5"/>
+    </svg>
+    <!-- Spark -->
+    <svg class="float2" width="100" height="140" viewBox="0 0 170 210">
+      <defs>
+        <radialGradient id="hss" cx="30%" cy="25%"><stop offset="0%" stop-color="#ffe566"/><stop offset="55%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#7c4f00"/></radialGradient>
+        <radialGradient id="hsi" cx="30%" cy="30%"><stop offset="0%" stop-color="#fff9c0"/><stop offset="100%" stop-color="#ffd700"/></radialGradient>
+        <radialGradient id="hsh" cx="35%" cy="30%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#ccd5de"/></radialGradient>
+      </defs>
+      <polygon points="85,58 96,96 136,96 105,118 116,156 85,134 54,156 65,118 34,96 74,96" fill="url(#hss)" stroke="#2D2D2D" stroke-width="3" stroke-linejoin="round"/>
+      <polygon points="85,72 92,96 116,96 97,109 104,133 85,120 66,133 73,109 54,96 78,96" fill="url(#hsi)" opacity="0.45"/>
+      <ellipse cx="70" cy="86" rx="11" ry="8" fill="white" opacity="0.28" transform="rotate(-15,70,86)"/>
+      <ellipse cx="85" cy="52" rx="24" ry="6" fill="url(#hsh)" stroke="#2D2D2D" stroke-width="1.8"/>
+      <rect x="66" y="30" width="38" height="26" rx="4" fill="url(#hsh)" stroke="#2D2D2D" stroke-width="1.8"/>
+      <ellipse cx="85" cy="24" rx="22" ry="15" fill="url(#hsh)" stroke="#2D2D2D" stroke-width="1.8"/>
+      <ellipse cx="73" cy="18" rx="14" ry="10" fill="url(#hsh)" stroke="#2D2D2D" stroke-width="1.5"/>
+      <ellipse cx="97" cy="18" rx="14" ry="10" fill="url(#hsh)" stroke="#2D2D2D" stroke-width="1.5"/>
+      <rect x="66" y="46" width="38" height="6" rx="2" fill="#F59E0B" opacity="0.9"/>
+      <ellipse cx="74" cy="108" rx="7" ry="8" fill="#2D2D2D"/>
+      <ellipse cx="96" cy="108" rx="7" ry="8" fill="#2D2D2D"/>
+      <ellipse cx="77" cy="105" rx="2.5" ry="3" fill="white"/>
+      <ellipse cx="99" cy="105" rx="2.5" ry="3" fill="white"/>
+      <path d="M72 120 Q85 130 98 120" stroke="#2D2D2D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    </svg>
+    <!-- Blaze -->
+    <svg class="float3" width="100" height="140" viewBox="0 0 170 210">
+      <defs>
+        <radialGradient id="hfl" cx="30%" cy="20%"><stop offset="0%" stop-color="#ff8a65"/><stop offset="55%" stop-color="#E53935"/><stop offset="100%" stop-color="#7f0000"/></radialGradient>
+        <radialGradient id="hfli" cx="40%" cy="25%"><stop offset="0%" stop-color="#ffcc02"/><stop offset="60%" stop-color="#ff6600"/><stop offset="100%" stop-color="#cc0000"/></radialGradient>
+        <radialGradient id="hflh" cx="35%" cy="30%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#ccd5de"/></radialGradient>
+      </defs>
+      <path d="M85,62 C66,72 42,95 40,128 C38,158 50,182 65,194 C72,199 80,203 85,204 C90,203 98,199 105,194 C120,182 132,158 130,128 C128,95 104,72 85,62 Z" fill="url(#hfl)" stroke="#2D2D2D" stroke-width="3"/>
+      <path d="M85,90 C76,97 62,113 62,135 C62,155 72,172 85,182 C98,172 108,155 108,135 C108,113 94,97 85,90 Z" fill="url(#hfli)" opacity="0.55"/>
+      <path d="M85,62 C80,44 68,28 74,10 C78,0 85,0 85,0 C85,0 92,0 96,10 C102,28 90,44 85,62 Z" fill="#FFD700" stroke="#2D2D2D" stroke-width="2"/>
+      <ellipse cx="85" cy="10" rx="20" ry="5" fill="url(#hflh)" stroke="#2D2D2D" stroke-width="1.8"/>
+      <rect x="68" y="-8" width="34" height="22" rx="4" fill="url(#hflh)" stroke="#2D2D2D" stroke-width="1.8"/>
+      <ellipse cx="85" cy="-14" rx="20" ry="13" fill="url(#hflh)" stroke="#2D2D2D" stroke-width="1.8"/>
+      <rect x="68" y="4" width="34" height="6" rx="2" fill="#E53935" opacity="0.85"/>
+      <path d="M70 138 Q77 131 84 138" stroke="#2D2D2D" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M86 138 Q93 131 100 138" stroke="#2D2D2D" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M68 153 Q85 167 102 153" stroke="#2D2D2D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+
+  <div class="scroll-hint">Scroll to explore the plan</div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 1. BRAND -->
+<!-- ══════════════════════════════════════════ -->
+<section id="brand">
+  <div class="sec-label">01 · Foundation</div>
+  <h2 class="sec-title">Brand Identity</h2>
+  <p class="sec-sub">Everything Plateful does, says, and looks like — before a single post goes live.</p>
+
+  <div class="brand-grid">
+    <div class="brand-card">
+      <h4>🏷️ Name & Tagline</h4>
+      <p><strong>Plateful</strong> — one word, full of meaning. A plateful of food. A handful of decisions handled. A feeling of satisfaction.</p>
+      <p style="margin-top:10px;font-size:13px;color:#888"><em>"The AI Cooking Companion That Rewards You for Cooking at Home."</em></p>
+    </div>
+    <div class="brand-card">
+      <h4>🎯 The One-Line Mission</h4>
+      <p>Make the dinner decision for you — based on what's already in your fridge — and reward you every single time you cook.</p>
+      <div class="voice-pills">
+        <span class="vpill vp-red">Gamified</span>
+        <span class="vpill vp-org">Smart</span>
+        <span class="vpill vp-grn">Personalized</span>
+        <span class="vpill vp-red">Rewarding</span>
+      </div>
+    </div>
+    <div class="brand-card">
+      <h4>🎨 Brand Colours</h4>
+      <p>Warm, bold, appetising. Every colour has a job.</p>
+      <div class="color-swatches">
+        <div class="swatch" style="background:#E53935">#E53935<br>Red</div>
+        <div class="swatch" style="background:#F59E0B">#F59E0B<br>Orange</div>
+        <div class="swatch" style="background:#2D2D2D;border:1px solid #555">#2D2D2D<br>Charcoal</div>
+        <div class="swatch" style="background:#FFD700;color:#333;text-shadow:none">#FFD700<br>Gold</div>
+        <div class="swatch" style="background:#FFF7F3;color:#aaa;text-shadow:none;border:1px solid #eee">#FFF7F3<br>Cream</div>
+      </div>
+    </div>
+    <div class="brand-card">
+      <h4>🗣️ Tone & Voice</h4>
+      <p>Warm best-friend energy. Never corporate. Never preachy. Always on your side.</p>
+      <div class="voice-pills" style="margin-top:14px">
+        <span class="vpill vp-grn">Warm & Encouraging</span>
+        <span class="vpill vp-red">Playfully Confident</span>
+        <span class="vpill vp-org">Genuinely Human</span>
+        <span class="vpill vp-red">Never Salesy</span>
+        <span class="vpill vp-grn">Short Sentences</span>
+        <span class="vpill vp-org">Emoji: sparingly ✓</span>
+      </div>
+    </div>
+    <div class="brand-card span2">
+      <h4>✍️ Voice in Practice — Examples</h4>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:8px">
+        <div style="background:var(--cream);border-radius:10px;padding:14px">
+          <div style="font-size:10px;font-weight:700;color:var(--orange);letter-spacing:1px;margin-bottom:6px">CAPTION</div>
+          <p style="font-size:13px;line-height:1.6;color:#444">"You have eggs, onions, and leftover rice. Plateful sees a whole meal. Swipe." 🍳</p>
+        </div>
+        <div style="background:var(--cream);border-radius:10px;padding:14px">
+          <div style="font-size:10px;font-weight:700;color:var(--orange);letter-spacing:1px;margin-bottom:6px">PUSH NOTIFICATION</div>
+          <p style="font-size:13px;line-height:1.6;color:#444">"6pm calling. Your fridge has ideas. Open Plateful. ⭐"</p>
+        </div>
+        <div style="background:var(--cream);border-radius:10px;padding:14px">
+          <div style="font-size:10px;font-weight:700;color:var(--orange);letter-spacing:1px;margin-bottom:6px">REWARD MOMENT</div>
+          <p style="font-size:13px;line-height:1.6;color:#444">"Day 7 streak. You just earned ₹50 in grocery credits. You cooked. You won. 🌟"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 2. MASCOTS -->
+<!-- ══════════════════════════════════════════ -->
+<section id="mascots">
+  <div class="sec-label">02 · Characters</div>
+  <h2 class="sec-title">The Plateful Family</h2>
+  <p class="sec-sub">Four characters, each with a job. They appear across every touchpoint — content, notifications, rewards, and campaigns. No random clip art. Always these four.</p>
+
+  <div class="mascot-row">
+
+    <!-- MASCOT 1: Chef P — exact V1 -->
+    <div class="mascot-card">
+      <div class="mascot-vis" style="background:radial-gradient(circle at 50% 60%, #ff6b6b 0%, #E53935 100%)">
+        <svg class="float1" width="180" height="220" viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="90" cy="155" rx="60" ry="14" fill="#fff" stroke="#2D2D2D" stroke-width="3"/>
+          <rect x="50" y="75" width="80" height="84" rx="6" fill="white" stroke="#2D2D2D" stroke-width="3"/>
+          <ellipse cx="90" cy="68" rx="42" ry="36" fill="white" stroke="#2D2D2D" stroke-width="3"/>
+          <ellipse cx="68" cy="58" rx="28" ry="24" fill="white" stroke="#2D2D2D" stroke-width="3"/>
+          <ellipse cx="112" cy="58" rx="28" ry="24" fill="white" stroke="#2D2D2D" stroke-width="3"/>
+          <ellipse cx="76" cy="112" rx="7" ry="8" fill="#2D2D2D"/>
+          <ellipse cx="104" cy="112" rx="7" ry="8" fill="#2D2D2D"/>
+          <ellipse cx="78" cy="110" rx="2.5" ry="3" fill="white"/>
+          <ellipse cx="106" cy="110" rx="2.5" ry="3" fill="white"/>
+          <path d="M76 128 Q90 140 104 128" stroke="#2D2D2D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <ellipse cx="65" cy="124" rx="7" ry="5" fill="#ff9999" opacity="0.6"/>
+          <ellipse cx="115" cy="124" rx="7" ry="5" fill="#ff9999" opacity="0.6"/>
+          <line x1="50" y1="115" x2="20" y2="105" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round"/>
+          <rect x="6" y="88" width="16" height="22" rx="3" fill="#ccc" stroke="#2D2D2D" stroke-width="2"/>
+          <line x1="14" y1="96" x2="14" y2="108" stroke="#888" stroke-width="1.5"/>
+          <line x1="11" y1="96" x2="11" y2="108" stroke="#888" stroke-width="1.5"/>
+          <line x1="130" y1="115" x2="158" y2="100" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="162,82 165,92 176,92 167,98 170,108 162,102 154,108 157,98 148,92 159,92" fill="#F59E0B" stroke="#2D2D2D" stroke-width="1.5"/>
+          <text x="32" y="50" font-size="14" fill="#FFD700" opacity="0.9">★</text>
+          <text x="140" y="44" font-size="11" fill="#FFD700" opacity="0.7">★</text>
+          <text x="148" y="70" font-size="9" fill="#FFD700" opacity="0.5">★</text>
+        </svg>
+      </div>
+      <div class="mascot-info">
+        <h4>Chef P</h4>
+        <p>The chef hat from the logo gets eyes and a smile. Holds a spatula and a reward star. Logo-faithful and instantly recognisable.</p>
+        <div class="mascot-role">Main App Mascot</div>
+      </div>
+    </div>
+
+    <!-- MASCOT 2: Platey — exact V1 -->
+    <div class="mascot-card">
+      <div class="mascot-vis" style="background:radial-gradient(circle at 50% 60%, #ffd080 0%, #f07c00 100%)">
+        <svg class="float2" width="180" height="220" viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="90" cy="155" rx="68" ry="20" fill="#e8e8e8" stroke="#2D2D2D" stroke-width="3"/>
+          <ellipse cx="90" cy="148" rx="68" ry="20" fill="white" stroke="#2D2D2D" stroke-width="3"/>
+          <ellipse cx="90" cy="145" rx="44" ry="13" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+          <ellipse cx="90" cy="115" rx="55" ry="50" fill="white" stroke="#2D2D2D" stroke-width="3"/>
+          <ellipse cx="76" cy="108" rx="7" ry="8" fill="#2D2D2D"/>
+          <ellipse cx="104" cy="108" rx="7" ry="8" fill="#2D2D2D"/>
+          <ellipse cx="78" cy="106" rx="2.5" ry="3" fill="white"/>
+          <ellipse cx="106" cy="106" rx="2.5" ry="3" fill="white"/>
+          <path d="M72 124 Q90 138 108 124" stroke="#2D2D2D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <ellipse cx="64" cy="120" rx="8" ry="6" fill="#ffb347" opacity="0.5"/>
+          <ellipse cx="116" cy="120" rx="8" ry="6" fill="#ffb347" opacity="0.5"/>
+          <ellipse cx="90" cy="68" rx="30" ry="8" fill="white" stroke="#2D2D2D" stroke-width="2.5"/>
+          <rect x="68" y="38" width="44" height="34" rx="4" fill="white" stroke="#2D2D2D" stroke-width="2.5"/>
+          <ellipse cx="90" cy="32" rx="26" ry="20" fill="white" stroke="#2D2D2D" stroke-width="2.5"/>
+          <ellipse cx="76" cy="26" rx="18" ry="14" fill="white" stroke="#2D2D2D" stroke-width="2.5"/>
+          <ellipse cx="104" cy="26" rx="18" ry="14" fill="white" stroke="#2D2D2D" stroke-width="2.5"/>
+          <line x1="68" y1="56" x2="112" y2="56" stroke="#E53935" stroke-width="3"/>
+          <line x1="36" y1="115" x2="14" y2="100" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="10" cy="97" r="6" fill="#2D2D2D"/>
+          <line x1="144" y1="115" x2="166" y2="100" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="170" cy="97" r="6" fill="#2D2D2D"/>
+          <text x="20" y="70" font-size="13" fill="white" opacity="0.8">★</text>
+          <text x="145" y="65" font-size="10" fill="white" opacity="0.6">★</text>
+        </svg>
+      </div>
+      <div class="mascot-info">
+        <h4>Platey</h4>
+        <p>The plate becomes the character. Round, warm, huggable. Mini chef hat on top with a red stripe. Hero mascot energy.</p>
+        <div class="mascot-role">Hero Mascot</div>
+      </div>
+    </div>
+
+    <!-- MASCOT 3: Homie — exact V1 -->
+    <div class="mascot-card">
+      <div class="mascot-vis" style="background:radial-gradient(circle at 50% 60%, #555 0%, #2D2D2D 100%)">
+        <svg class="float3" width="180" height="220" viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="90" cy="178" rx="64" ry="15" fill="#ddd" stroke="#2D2D2D" stroke-width="2.5"/>
+          <rect x="46" y="100" width="88" height="82" rx="6" fill="#8B5E3C" stroke="#2D2D2D" stroke-width="2.5"/>
+          <ellipse cx="90" cy="90" rx="44" ry="36" fill="white" stroke="#2D2D2D" stroke-width="2.5"/>
+          <ellipse cx="66" cy="80" rx="30" ry="24" fill="white" stroke="#2D2D2D" stroke-width="2.5"/>
+          <ellipse cx="114" cy="80" rx="30" ry="24" fill="white" stroke="#2D2D2D" stroke-width="2.5"/>
+          <rect x="58" y="118" width="24" height="28" rx="4" fill="#FFD700" stroke="#2D2D2D" stroke-width="2"/>
+          <line x1="70" y1="118" x2="70" y2="146" stroke="#2D2D2D" stroke-width="1.5"/>
+          <line x1="58" y1="132" x2="82" y2="132" stroke="#2D2D2D" stroke-width="1.5"/>
+          <rect x="98" y="118" width="24" height="28" rx="4" fill="#FFD700" stroke="#2D2D2D" stroke-width="2"/>
+          <line x1="110" y1="118" x2="110" y2="146" stroke="#2D2D2D" stroke-width="1.5"/>
+          <line x1="98" y1="132" x2="122" y2="132" stroke="#2D2D2D" stroke-width="1.5"/>
+          <rect x="76" y="148" width="28" height="32" rx="14" fill="#5a3a1a" stroke="#2D2D2D" stroke-width="2"/>
+          <path d="M80 158 Q90 166 100 158" stroke="#FFD700" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <ellipse cx="70" cy="132" rx="10" ry="10" fill="#FFD700" opacity="0.15"/>
+          <ellipse cx="110" cy="132" rx="10" ry="10" fill="#FFD700" opacity="0.15"/>
+          <line x1="46" y1="130" x2="18" y2="115" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round"/>
+          <rect x="4" y="100" width="16" height="20" rx="3" fill="#8B5E3C" stroke="#2D2D2D" stroke-width="2"/>
+          <circle cx="12" cy="92" r="5" fill="#ccc" opacity="0.6"/>
+          <circle cx="18" cy="84" r="4" fill="#ccc" opacity="0.4"/>
+          <line x1="134" y1="130" x2="162" y2="115" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="166,98 169,108 180,108 171,114 174,124 166,118 158,124 161,114 152,108 163,108" fill="#F59E0B" stroke="#2D2D2D" stroke-width="1.5"/>
+          <text x="24" y="68" font-size="14" fill="#FFD700" opacity="0.9">★</text>
+          <text x="142" y="58" font-size="11" fill="#FFD700" opacity="0.8">★</text>
+          <text x="155" y="82" font-size="8" fill="#FFD700" opacity="0.5">★</text>
+        </svg>
+      </div>
+      <div class="mascot-info">
+        <h4>Homie</h4>
+        <p>The logo's hidden house lives inside the chef hat. Window eyes, door mouth, chimney puffing smoke. Cosy and completely unique.</p>
+        <div class="mascot-role">Home &amp; Warmth</div>
+      </div>
+    </div>
+
+    <!-- MASCOT 4: Spark — exact V1 -->
+    <div class="mascot-card">
+      <div class="mascot-vis" style="background:radial-gradient(circle at 50% 60%, #fff8f0 0%, #ffe8d0 100%)">
+        <svg class="float4" width="200" height="220" viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(100, 118)">
+            <ellipse cx="0" cy="0" rx="58" ry="58" fill="#F59E0B" opacity="0.15"/>
+            <polygon points="0,-58 13,-22 50,-38 26,-8 50,22 13,8 0,48 -13,8 -50,22 -26,-8 -50,-38 -13,-22" fill="#F59E0B" stroke="#2D2D2D" stroke-width="2.5" stroke-linejoin="round"/>
+            <polygon points="0,-38 8,-14 32,-24 17,-5 32,14 8,5 0,30 -8,5 -32,14 -17,-5 -32,-24 -8,-14" fill="#FFD700" opacity="0.6"/>
+            <ellipse cx="-14" cy="-6" rx="7" ry="8" fill="#2D2D2D"/>
+            <ellipse cx="14" cy="-6" rx="7" ry="8" fill="#2D2D2D"/>
+            <ellipse cx="-12" cy="-8" rx="2.5" ry="3" fill="white"/>
+            <ellipse cx="16" cy="-8" rx="2.5" ry="3" fill="white"/>
+            <path d="M-14 10 Q0 22 14 10" stroke="#2D2D2D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <ellipse cx="-22" cy="6" rx="7" ry="5" fill="#ff9999" opacity="0.5"/>
+            <ellipse cx="22" cy="6" rx="7" ry="5" fill="#ff9999" opacity="0.5"/>
+          </g>
+          <ellipse cx="100" cy="56" rx="22" ry="7" fill="white" stroke="#2D2D2D" stroke-width="2"/>
+          <rect x="82" y="34" width="36" height="26" rx="3" fill="white" stroke="#2D2D2D" stroke-width="2"/>
+          <ellipse cx="100" cy="28" rx="20" ry="16" fill="white" stroke="#2D2D2D" stroke-width="2"/>
+          <ellipse cx="88" cy="22" rx="13" ry="10" fill="white" stroke="#2D2D2D" stroke-width="2"/>
+          <ellipse cx="112" cy="22" rx="13" ry="10" fill="white" stroke="#2D2D2D" stroke-width="2"/>
+          <line x1="82" y1="50" x2="118" y2="50" stroke="#E53935" stroke-width="2.5"/>
+          <g style="animation:spin-slow 6s linear infinite;transform-origin:100px 118px">
+            <circle cx="100" cy="52" r="5" fill="#E53935" opacity="0.8"/>
+            <circle cx="148" cy="118" r="4" fill="#E53935" opacity="0.6"/>
+            <circle cx="100" cy="184" r="3" fill="#E53935" opacity="0.5"/>
+            <circle cx="52" cy="118" r="4" fill="#E53935" opacity="0.6"/>
+          </g>
+          <rect x="130" y="80" width="48" height="22" rx="11" fill="#E53935"/>
+          <text x="154" y="95" font-size="11" font-weight="700" fill="white" text-anchor="middle" font-family="DM Sans, sans-serif">+50 ★</text>
+        </svg>
+      </div>
+      <div class="mascot-info">
+        <h4>Spark</h4>
+        <p>The reward star comes alive. Appears on every streak, every earned point, every reward drop. Pure dopamine companion.</p>
+        <div class="mascot-role">Rewards Companion</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 3. AUDIENCE -->
+<!-- ══════════════════════════════════════════ -->
+<section id="audience">
+  <div class="sec-label">03 · Who We're Talking To</div>
+  <h2 class="sec-title">Target Audience</h2>
+  <p class="sec-sub">Three distinct people, three distinct pain points. We speak to all three differently.</p>
+  <div class="tg-grid">
+    <div class="tg-card tg1">
+      <span class="tg-emoji">👩‍💼</span>
+      <h4>The Urban Professional</h4>
+      <p>24–35. Orders Uber Eats 4× a week. Wants to cook but hits a wall of "what do I even make?" every single evening. Has ingredients, lacks decisions.</p>
+      <div class="tg-pills">
+        <span class="tg-pill">Primary Target</span>
+        <span class="tg-pill">TikTok</span>
+        <span class="tg-pill">Instagram</span>
+        <span class="tg-pill">Reddit</span>
+      </div>
+      <p style="margin-top:12px;font-size:12px;opacity:.75">Message: <em>"Cook more. Order less. Actually enjoy it."</em></p>
+    </div>
+    <div class="tg-card tg2">
+      <span class="tg-emoji">👨‍👩‍👧</span>
+      <h4>The Working Parent</h4>
+      <p>28–42. 6pm. Kids hungry. Fridge full. Brain empty. The problem is never skill — it's decision fatigue after an exhausting day.</p>
+      <div class="tg-pills">
+        <span class="tg-pill">Month 2 Focus</span>
+        <span class="tg-pill">Instagram</span>
+        <span class="tg-pill">Facebook Groups</span>
+      </div>
+      <p style="margin-top:12px;font-size:12px;opacity:.75">Message: <em>"Dinner decided. In seconds."</em></p>
+    </div>
+    <div class="tg-card tg3">
+      <span class="tg-emoji">🥗</span>
+      <h4>The Health-Conscious Millennial</h4>
+      <p>26–38. Already cooks. Wants better — more aligned with fitness goals, less food waste, more variety. Frustrated by generic apps that don't know them.</p>
+      <div class="tg-pills">
+        <span class="tg-pill">Month 3 Focus</span>
+        <span class="tg-pill">Instagram</span>
+        <span class="tg-pill">YouTube</span>
+      </div>
+      <p style="margin-top:12px;font-size:12px;opacity:.75">Message: <em>"Finally. An AI that actually knows how you eat."</em></p>
+    </div>
+  </div>
+  <div class="food-row">
+    <div class="food-bubble" style="background:#fff0e0">🍜</div>
+    <div class="food-bubble" style="background:#fff0f0">🍳</div>
+    <div class="food-bubble" style="background:#f0fff0">🥗</div>
+    <div class="food-bubble" style="background:#fff8e0">🍛</div>
+    <div class="food-bubble" style="background:#f0f0ff">🥘</div>
+    <div class="food-bubble" style="background:#fff0e0">🍝</div>
+    <div class="food-bubble" style="background:#f0fff8">🥙</div>
+    <div class="food-bubble" style="background:#fff0f8">🍱</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 4. POSITIONING -->
+<!-- ══════════════════════════════════════════ -->
+<section id="positioning">
+  <div class="sec-label">04 · Market Position</div>
+  <h2 class="sec-title">How We're Positioned</h2>
+  <p class="sec-sub">The market is wide open. Two giants shut down. Nobody combines all four of Plateful's key features. We don't compete — we occupy.</p>
+
+  <div class="pos-big">
+    <h3>"The only app that makes the cooking decision for you — then rewards you for cooking."</h3>
+    <p>Every competitor is a tool you use. Plateful is a decision that's already been made. That's the entire positioning in one idea.</p>
+    <div class="vs-grid">
+      <div class="vs-card vs-bad">
+        <h5>Everyone else</h5>
+        <ul>
+          <li>Gives you thousands of recipes to browse</li>
+          <li>Makes you decide, then guides you</li>
+          <li>No pantry-first intelligence</li>
+          <li>Zero real-world rewards</li>
+          <li>No AI-generated cook-along video</li>
+        </ul>
+      </div>
+      <div class="vs-card vs-good">
+        <h5>Plateful</h5>
+        <ul>
+          <li>Decides for you — based on your fridge</li>
+          <li>Swipe to pick from 5 perfect options</li>
+          <li>Pantry scan + AI taste profile</li>
+          <li>Real grocery credits for cooking</li>
+          <li>AI-generated video for every recipe</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 5. PLAN OF ACTION -->
+<!-- ══════════════════════════════════════════ -->
+<section id="plan">
+  <div class="sec-label">05 · Plan of Action</div>
+  <h2 class="sec-title">Build → Launch → Promote</h2>
+  <p class="sec-sub">Three months, one phase at a time. Every week has a specific job and a specific creative output. Ads enter only after we have real retention data — not before.</p>
+
+  <!-- AD CADENCE CALLOUT -->
+  <div style="background:var(--charcoal);border-radius:16px;padding:28px 32px;margin-bottom:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;overflow:hidden">
+    <div style="padding-right:24px;border-right:1px solid #444">
+      <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:var(--orange);text-transform:uppercase;margin-bottom:8px">May — Month 1</div>
+      <div style="font-family:'Fraunces',serif;font-size:17px;font-weight:900;color:white;margin-bottom:6px">Zero Paid Ads</div>
+      <div style="font-size:12px;color:#fde8d8;line-height:1.6">Organic only. Build the habit of posting. Learn what content the audience responds to. Collect the data we need before spending a rupee on ads.</div>
+    </div>
+    <div style="padding:0 24px;border-right:1px solid #444">
+      <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:var(--orange);text-transform:uppercase;margin-bottom:8px">June — Month 2</div>
+      <div style="font-family:'Fraunces',serif;font-size:17px;font-weight:900;color:white;margin-bottom:6px">Test Ads Start</div>
+      <div style="font-size:12px;color:#fde8d8;line-height:1.6">Take the 1–2 best performing organic posts and boost them. Small budget. TikTok Spark Ads + Apple Search Ads only. Measure cost-per-install strictly.</div>
+    </div>
+    <div style="padding-left:24px">
+      <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:var(--orange);text-transform:uppercase;margin-bottom:8px">July — Month 3</div>
+      <div style="font-family:'Fraunces',serif;font-size:17px;font-weight:900;color:white;margin-bottom:6px">Scale What Works</div>
+      <div style="font-size:12px;color:#fde8d8;line-height:1.6">Double down on the ad formats that showed a cost-per-install under ₹80. Cut everything else. Influencer round 2 with Working Parent persona.</div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <!-- Phase 1 -->
+    <div class="tl-phase phase-red" style="margin-bottom:4px">
+      <div class="tl-label">
+        <div class="phase-name">Phase 1</div>
+        <div class="phase-date">Apr 11 – Apr 30</div>
+        <div class="phase-goal">Build the Base</div>
+      </div>
+      <div class="tl-body">
+        <div class="tl-item">
+          <div class="ti-week">Week 1</div>
+          <div class="ti-task">All social accounts created & branded</div>
+          <div class="ti-note">TikTok, Instagram, Reddit, Facebook Page</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 1</div>
+          <div class="ti-task">Landing page live — email capture only</div>
+          <div class="ti-note">No countdown. No hype. Just collect emails.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 2</div>
+          <div class="ti-task">ASO: keywords researched, screenshots ready</div>
+          <div class="ti-note">This is critical — free organic downloads forever</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 2</div>
+          <div class="ti-task">Canva templates built — all formats</div>
+          <div class="ti-note">Reels, Stories, Feed, TikTok — done once, reused always</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 3</div>
+          <div class="ti-task">First 2 posts published — just the app</div>
+          <div class="ti-note">Show the swipe mechanic. No voiceover. Let the product speak.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 3–4</div>
+          <div class="ti-task">Reach out to 15–20 micro creators</div>
+          <div class="ti-note">DM directly. Brief sent. Aim for 3–4 confirmed by May 1.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 4</div>
+          <div class="ti-task">2 more posts — behind the scenes / team</div>
+          <div class="ti-note">Human content. Who built this and why.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 4</div>
+          <div class="ti-task">Product Hunt prep — find a hunter</div>
+          <div class="ti-note">Network in advance. Don't leave this to launch week.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 2 -->
+    <div class="tl-phase phase-org" style="margin-bottom:4px">
+      <div class="tl-label">
+        <div class="phase-name">Phase 2</div>
+        <div class="phase-date">May 1 – May 31</div>
+        <div class="phase-goal">🚀 Launch & Post</div>
+      </div>
+      <div class="tl-body">
+        <div class="tl-item">
+          <div class="ti-week">May 1 — Launch</div>
+          <div class="ti-task">Hero video live on TikTok + Instagram</div>
+          <div class="ti-note">Swipe mechanic demo. The best thing we've shot.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">May 1–5</div>
+          <div class="ti-task">3–4 influencer posts go live</div>
+          <div class="ti-note">"7 days of AI cooking" format. Stagger over 5 days, not all day 1.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">May 1</div>
+          <div class="ti-task">Press release to 10 targeted journalists</div>
+          <div class="ti-note">Food + tech beat writers. Personalised, not mass blast.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 2</div>
+          <div class="ti-task">3 posts this week — keep posting</div>
+          <div class="ti-note">Reward reveal, UGC repost, product demo. Consistency matters most.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 2</div>
+          <div class="ti-task">Product Hunt live</div>
+          <div class="ti-note">Mobilise personal networks. Every upvote counts.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 3</div>
+          <div class="ti-task">3 posts — focus on UGC this week</div>
+          <div class="ti-note">Repost anyone who shared their Plateful meal. Ask for permission.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 3</div>
+          <div class="ti-task">First analytics review — honest look</div>
+          <div class="ti-note">Which post got the most saves? That's your next ad creative.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 4</div>
+          <div class="ti-task">3 posts — "streak & reward" format</div>
+          <div class="ti-note">Most shareable format. Build the habit loop narrative.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">Week 4</div>
+          <div class="ti-task">Reddit: begin organic seeding</div>
+          <div class="ti-note">r/MealPrepSunday, r/EatCheapAndHealthy. Be helpful first.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">End of May</div>
+          <div class="ti-task">Total: ~12 posts published this month</div>
+          <div class="ti-note">3/week · Demo, UGC, Reward, Brand — rotating</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 3 -->
+    <div class="tl-phase phase-grn">
+      <div class="tl-label">
+        <div class="phase-name">Phase 3</div>
+        <div class="phase-date">Jun 1 – Jul 25</div>
+        <div class="phase-goal">Promote & Grow</div>
+      </div>
+      <div class="tl-body">
+        <div class="tl-item">
+          <div class="ti-week">June Week 1</div>
+          <div class="ti-task">🎯 Ads begin — TikTok Spark Ad</div>
+          <div class="ti-note">Boost the highest-save organic post. ₹3–5K test budget. 7 days only.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">June Week 1</div>
+          <div class="ti-task">🎯 Apple Search Ads launch</div>
+          <div class="ti-note">"meal planner app", "what to cook tonight". Exact match only. ₹5K/month.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">June Week 1</div>
+          <div class="ti-task">First 3 SEO blog pages published</div>
+          <div class="ti-note">"What can I cook with chicken and rice?" style. Compounding traffic.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">June Week 2</div>
+          <div class="ti-task">14-day cooking challenge campaign</div>
+          <div class="ti-note">Streaks + reward reveals. Daily content prompt for users to share.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">June Week 2</div>
+          <div class="ti-task">3 posts/week continues</div>
+          <div class="ti-note">Now persona-specific: Working Parent content starts appearing.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">June Week 3</div>
+          <div class="ti-task">Review ad results — cut or scale</div>
+          <div class="ti-note">If CPI &gt; ₹80, pause. If CPI &lt; ₹60, increase budget by 50%.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">June Week 3</div>
+          <div class="ti-task">ASO update based on real data</div>
+          <div class="ti-note">Change keywords and screenshots based on what's converting.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">July Week 1–2</div>
+          <div class="ti-task">5–8 more SEO pages published</div>
+          <div class="ti-note">Content + SEO is a slow burn — start early, benefit later.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">July Week 2</div>
+          <div class="ti-task">Influencer round 2 — Working Parent niche</div>
+          <div class="ti-note">Mom creators, family meal planners. Different tone, same app.</div>
+        </div>
+        <div class="tl-item">
+          <div class="ti-week">July 25</div>
+          <div class="ti-task">Full 3-month review + next plan</div>
+          <div class="ti-note">What worked, what didn't, where to put budget in month 4.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 6. MILESTONES -->
+<!-- ══════════════════════════════════════════ -->
+<section id="milestones">
+  <div class="sec-label">06 · What Success Looks Like</div>
+  <h2 class="sec-title">Honest 3-Month Milestones</h2>
+  <p class="sec-sub">These are conservative, ground-up numbers for a brand new app with no existing audience, organic-first, ₹15K/month budget. No overpromising. If we beat these, great — but we won't promise what we can't deliver.</p>
+
+  <!-- Honest context box -->
+  <div style="background:#fff8e1;border:2px solid #ffe082;border-radius:14px;padding:22px 26px;margin-bottom:28px;display:flex;gap:14px;align-items:flex-start">
+    <div style="font-size:24px">⚠️</div>
+    <div>
+      <div style="font-weight:700;font-size:14px;color:#7c4f00;margin-bottom:6px">Why these numbers are intentionally small</div>
+      <p style="font-size:13px;color:#8a6000;line-height:1.7">A new app with no existing audience, no paid ads in month 1, and organic-only growth takes 6–8 weeks to get traction — not 8 days. Social algorithms need time to learn your content. Word of mouth needs time to spread. These milestones reflect reality, not wishful thinking. Hitting all of them at the 3-month mark = a strong, healthy foundation to scale from.</p>
+    </div>
+  </div>
+
+  <!-- Month-by-month milestone table -->
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:24px">
+
+    <!-- Month 1 -->
+    <div style="background:white;border-radius:var(--r);overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06)">
+      <div style="background:linear-gradient(135deg,var(--red),var(--red-d));padding:18px 22px;color:white">
+        <div style="font-size:10px;font-weight:700;letter-spacing:2px;opacity:.8;margin-bottom:4px">MAY — MONTH 1</div>
+        <div style="font-family:'Fraunces',serif;font-size:20px;font-weight:900">Build Traction</div>
+      </div>
+      <div style="padding:20px 22px;display:flex;flex-direction:column;gap:14px">
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:var(--red)">50–100</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">Total downloads by May 31</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">Friends, family, early community, beta users</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:var(--red)">200–400</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">TikTok followers</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">Starting from zero. Slow is normal.</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:var(--red)">150–300</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">Instagram followers</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">Feed + Reels combo builds slowly</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:var(--red)">12</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">Posts published (3/week)</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">Consistency over quality in month 1</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:var(--red)">10–15</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">App Store reviews</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">From beta users + early downloaders</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Month 2 -->
+    <div style="background:white;border-radius:var(--r);overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06)">
+      <div style="background:linear-gradient(135deg,var(--orange),var(--orange-d));padding:18px 22px;color:white">
+        <div style="font-size:10px;font-weight:700;letter-spacing:2px;opacity:.8;margin-bottom:4px">JUNE — MONTH 2</div>
+        <div style="font-family:'Fraunces',serif;font-size:20px;font-weight:900">Build Momentum</div>
+      </div>
+      <div style="padding:20px 22px;display:flex;flex-direction:column;gap:14px">
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:var(--orange)">200–400</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">Cumulative downloads by Jun 30</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">Influencer posts + first ads start to compound</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:var(--orange)">600–900</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">TikTok followers</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">If 1–2 posts get good organic reach</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:var(--orange)">400–600</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">Instagram followers</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">Reel reach starts compounding</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:var(--orange)">12</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">Posts published (3/week)</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">Now persona-specific — Working Parent enters</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:var(--orange)">2 ads</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">Paid ad creatives running</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">TikTok Spark + Apple Search Ads only</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Month 3 -->
+    <div style="background:white;border-radius:var(--r);overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06)">
+      <div style="background:linear-gradient(135deg,#2e7d32,#1b5e20);padding:18px 22px;color:white">
+        <div style="font-size:10px;font-weight:700;letter-spacing:2px;opacity:.8;margin-bottom:4px">JULY — MONTH 3</div>
+        <div style="font-family:'Fraunces',serif;font-size:20px;font-weight:900">Build Scale</div>
+      </div>
+      <div style="padding:20px 22px;display:flex;flex-direction:column;gap:14px">
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:#2e7d32">500–1,000</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">Cumulative downloads by Jul 25</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">Organic + ads + word of mouth together</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:#2e7d32">1,000–2,000</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">TikTok followers</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">Realistic if 1 post breaks through organically</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:#2e7d32">600–1,000</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">Instagram followers</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">Slower than TikTok — Reels algorithm is harder</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:#2e7d32">12</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">Posts published (3/week)</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">36 posts total across 3 months — solid library</div>
+        </div>
+        <div>
+          <div style="font-size:22px;font-weight:900;font-family:'Fraunces',serif;color:#2e7d32">25–30%</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">Day-7 retention — the real health signal</div>
+          <div style="font-size:11px;color:#b45309;margin-top:2px;font-weight:500">If this holds, the product works. Scale from here.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- North star callout -->
+  <div style="background:var(--charcoal);border-radius:14px;padding:24px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+    <div style="font-size:32px">🧭</div>
+    <div>
+      <div style="font-size:10px;font-weight:700;letter-spacing:2px;color:var(--orange);text-transform:uppercase;margin-bottom:6px">The One Number That Actually Matters</div>
+      <div style="font-family:'Fraunces',serif;font-size:18px;font-weight:900;color:white;margin-bottom:6px">Day-7 Retention &gt; 25% = the product is working. Everything else is secondary.</div>
+      <p style="font-size:13px;color:#fde8d8;line-height:1.6">You can always get more downloads with more money. You cannot fake retention. If people come back to Plateful on day 7, the habit loop is working — and that's the entire business. Watch this number above all others.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 7. CHANNELS -->
+<!-- ══════════════════════════════════════════ -->
+<section id="channels">
+  <div class="sec-label">07 · Where We Show Up</div>
+  <h2 class="sec-title">Channels & Priorities</h2>
+  <p class="sec-sub">Six channels. Each has one job. We don't spread thin — we dominate the top two first.</p>
+  <div class="channels-grid">
+    <div class="ch-card">
+      <div class="ch-icon">📱</div>
+      <h4>TikTok</h4>
+      <p>The hero acquisition channel. Short-form video showing the swipe mechanic converts fastest here. Algorithm rewards consistency over perfection.</p>
+      <div><span class="ch-priority pri-1">Priority 1</span></div>
+      <div class="ch-kpi">Target: <strong>3–4 posts/week</strong> · Goal: <strong>5K followers by June</strong></div>
+    </div>
+    <div class="ch-card">
+      <div class="ch-icon">📸</div>
+      <h4>Instagram Reels</h4>
+      <p>Mirror TikTok content. Feed builds brand credibility. Stories drive DMs and community feeling. Reels are the growth engine.</p>
+      <div><span class="ch-priority pri-1">Priority 1</span></div>
+      <div class="ch-kpi">Target: <strong>4–5 posts/week</strong> · Goal: <strong>4K followers by June</strong></div>
+    </div>
+    <div class="ch-card">
+      <div class="ch-icon">🏪</div>
+      <h4>App Store (ASO)</h4>
+      <p>The highest-ROI channel nobody talks about. Right keywords = free organic downloads forever. This is always-on and critical from day one.</p>
+      <div><span class="ch-priority pri-1">Critical Always-On</span></div>
+      <div class="ch-kpi">Focus: <strong>"what to cook" keywords</strong> · A/B test screenshots</div>
+    </div>
+    <div class="ch-card">
+      <div class="ch-icon">🧵</div>
+      <h4>Reddit</h4>
+      <p>r/MealPrepSunday, r/EatCheapAndHealthy, r/Cooking. Organic seeding — not spam. Answer questions, be helpful, mention Plateful naturally.</p>
+      <div><span class="ch-priority pri-2">Priority 2</span></div>
+      <div class="ch-kpi">Approach: <strong>value-first commenting</strong> · 3× per week</div>
+    </div>
+    <div class="ch-card">
+      <div class="ch-icon">🔍</div>
+      <h4>Web SEO</h4>
+      <p>"What can I cook with chicken and rice?" — 50,000 monthly searches. We answer that. This compounds slowly but pays forever. Start month 2.</p>
+      <div><span class="ch-priority pri-2">Priority 2 — Month 2</span></div>
+      <div class="ch-kpi">Goal: <strong>8–10 pages by July</strong> · first rankings by August</div>
+    </div>
+    <div class="ch-card">
+      <div class="ch-icon">👥</div>
+      <h4>Facebook Groups</h4>
+      <p>Meal planning and family cooking groups. Lower acquisition cost for the Working Parent persona. Month 2 activation once we have proof of product.</p>
+      <div><span class="ch-priority pri-3">Priority 3 — Month 2</span></div>
+      <div class="ch-kpi">Groups: <strong>"Meal Prep for Families"</strong> style communities</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 8. SOCIAL SETUP -->
+<!-- ══════════════════════════════════════════ -->
+<section id="social">
+  <div class="sec-label">08 · Social Setup</div>
+  <h2 class="sec-title">Pages to Create — Now</h2>
+  <p class="sec-sub">Every account should be live before April 20. Consistent handle, consistent bio, consistent link. Here's exactly how each one should be set up.</p>
+  <div class="social-grid">
+    <div class="social-card">
+      <div class="social-icon" style="background:#ff0050;color:white">TT</div>
+      <div>
+        <h4>TikTok</h4>
+        <p>Handle: @platefulapp · Bio: "AI decides dinner. You just cook. 🍳 Download ↓" · Link: App Store / landing page · Profile pic: Platey mascot</p>
+        <div class="social-handle">@platefulapp</div>
+      </div>
+    </div>
+    <div class="social-card">
+      <div class="social-icon" style="background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:white">IG</div>
+      <div>
+        <h4>Instagram</h4>
+        <p>Handle: @platefulapp · Bio same formula · 5 Highlights: How It Works / Recipes / Rewards / Reviews / BTS · Link in bio tool (Linktree or native)</p>
+        <div class="social-handle">@platefulapp</div>
+      </div>
+    </div>
+    <div class="social-card">
+      <div class="social-icon" style="background:#ff4500;color:white">Re</div>
+      <div>
+        <h4>Reddit</h4>
+        <p>u/platefulapp account created. Don't post as brand initially — participate as a helpful user. Only reveal the brand after providing real value.</p>
+        <div class="social-handle">u/platefulapp</div>
+      </div>
+    </div>
+    <div class="social-card">
+      <div class="social-icon" style="background:#1877f2;color:white">Fb</div>
+      <div>
+        <h4>Facebook Page</h4>
+        <p>Create the page but activate in month 2. For now, join relevant cooking/meal planning groups as a personal account and observe what content lands.</p>
+        <div class="social-handle">Plateful App</div>
+      </div>
+    </div>
+    <div class="social-card">
+      <div class="social-icon" style="background:#1da1f2;color:white">X</div>
+      <div>
+        <h4>X / Twitter</h4>
+        <p>Claim the handle @platefulapp now. Don't invest time here until month 3. Useful for tech/food press engagement and founder voice building later.</p>
+        <div class="social-handle">@platefulapp</div>
+      </div>
+    </div>
+    <div class="social-card">
+      <div class="social-icon" style="background:#2D2D2D;color:white">PH</div>
+      <div>
+        <h4>Product Hunt</h4>
+        <p>Submit on launch week (May 1–7). Build a hunter network in advance. A top-5 Product Hunt finish generates press, backlinks, and 500–2,000 new users organically.</p>
+        <div class="social-handle">Plateful — AI Cooking Companion</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 9. INFLUENCERS -->
+<!-- ══════════════════════════════════════════ -->
+<section id="influencers">
+  <div class="sec-label">09 · Creator Strategy</div>
+  <h2 class="sec-title">Influencer Playbook</h2>
+  <p class="sec-sub">Forget mega influencers. For a product launch on this budget, micro and mid-tier creators with genuinely engaged audiences outperform every time. Here's exactly who to find.</p>
+
+  <div class="inf-grid">
+    <div class="inf-card">
+      <div class="inf-top inf-t1">
+        <h4>Micro Creators</h4>
+        <div class="inf-size">10K – 100K followers</div>
+        <p>Home cooks, "what I eat in a day" creators, meal preppers. Their audience trusts them like a friend. Engagement rate is 5–8% vs 1–2% for mega influencers.</p>
+      </div>
+      <div class="inf-bot">
+        <div class="inf-do"><strong>WHAT THEY POST</strong>"I let AI decide my meals for a week" — authentic, messy, real. No script. Must show the swipe mechanic and at least one reward moment.</div>
+        <div class="inf-do" style="margin-top:10px"><strong>COMPENSATION</strong>Free Premium (3 months) + unique discount code + ₹2,000–5,000 flat fee per Reel</div>
+      </div>
+    </div>
+    <div class="inf-card">
+      <div class="inf-top inf-t2">
+        <h4>Mid-Tier Creators</h4>
+        <div class="inf-size">100K – 500K followers</div>
+        <p>Lifestyle + food crossover creators. "Adulting" content, budget cooking, healthy eating. These are the launch day heroes — their one post can drive 300–500 downloads directly.</p>
+      </div>
+      <div class="inf-bot">
+        <div class="inf-do"><strong>WHAT THEY POST</strong>Full story-arc video: hook → fridge scan → swipe → cook → reward reveal. Must be their own voice, not a script.</div>
+        <div class="inf-do" style="margin-top:10px"><strong>COMPENSATION</strong>Negotiated individually — typically ₹15,000–40,000 per Reel + performance bonus if downloads exceed target</div>
+      </div>
+    </div>
+    <div class="inf-card">
+      <div class="inf-top inf-t3">
+        <h4>Niche Experts</h4>
+        <div class="inf-size">Any size, high authority</div>
+        <p>Registered dietitians, food bloggers, busy-mom creators, fitness meal preppers. Their niche credibility transfers directly to Plateful's positioning. Small audience, huge trust.</p>
+      </div>
+      <div class="inf-bot">
+        <div class="inf-do"><strong>WHAT THEY POST</strong>"As a dietitian, here's why I actually like this app" — expert validation framing. Their opinion has weight that follower count alone can't buy.</div>
+        <div class="inf-do" style="margin-top:10px"><strong>COMPENSATION</strong>Free Premium (6 months) + co-creation opportunity + revenue share conversation for long-term partnerships</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--cream-d);border-radius:16px;padding:28px;margin-top:20px;border:2px solid #f0d0b0">
+    <div class="sec-label" style="margin-bottom:8px">How to Find Them</div>
+    <p style="font-size:14px;color:#555;line-height:1.7">Search TikTok for: <strong>"meal prep sunday"</strong> · <strong>"what i eat in a day"</strong> · <strong>"cooking for one"</strong> · <strong>"easy weeknight dinner"</strong>. Filter by posted in the last 30 days. Look for accounts with high comment-to-like ratios (above 1%). That's real engagement. DM directly — no agency needed at this stage.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 10. ADS -->
+<!-- ══════════════════════════════════════════ -->
+<section id="ads">
+  <div class="sec-label">10 · Paid Advertising</div>
+  <h2 class="sec-title">Do We Run Ads?</h2>
+
+  <div class="ads-honest">
+    <h3>Honest Answer: Not in Month 1. Selectively in Month 2.</h3>
+    <p>Paid ads before you have proven organic retention is burning money. You need to know your Day-7 retention and trial-to-paid conversion rate first. If those numbers look good (30%+ D7, 10%+ conversion), then ads amplify what's working. If those numbers are bad, ads just accelerate failure. <strong>Organic first. Paid only to amplify proven content.</strong></p>
+  </div>
+
+  <div class="ads-grid">
+    <div class="ad-card">
+      <h4>📱 TikTok Spark Ads — Month 2</h4>
+      <p>Take your best-performing organic post (most saves, most comments) and boost it as a Spark Ad. You're not creating new ads — you're amplifying what already works. Target: cooking interest, meal prep, 22–38 age.</p>
+      <div class="ad-budget">💰 Budget: ₹3,000–5,000 for a 7-day test. Measure cost-per-install. Stop if CPI &gt; ₹80.</div>
+    </div>
+    <div class="ad-card">
+      <h4>📸 Instagram Reels Boost — Month 2</h4>
+      <p>Same principle — boost an organic Reel that already has strong engagement. Target lookalike audiences from your existing followers. Always use a video showing the swipe mechanic, not a static image.</p>
+      <div class="ad-budget">💰 Budget: ₹3,000–5,000 test. Pause if saves-to-reach ratio drops below 2%.</div>
+    </div>
+    <div class="ad-card">
+      <h4>🍎 Apple Search Ads — Month 2</h4>
+      <p>The most underrated channel for app launches. Target exact keywords: "meal planner app", "what to cook tonight", "recipe app". Users searching these have purchase intent. Conversion rates are 2–3× higher than social ads.</p>
+      <div class="ad-budget">💰 Budget: ₹5,000/month. Start with exact match only. Expand after 2 weeks of data.</div>
+    </div>
+    <div class="ad-card">
+      <h4>🚫 What We Don't Run</h4>
+      <p>No Google Display ads. No YouTube pre-rolls. No Facebook feed ads (feed is dead for food content). No influencer "paid partnership" posts without authentic content approval. No ads before we have D7 retention data.</p>
+      <div class="ad-budget">📌 Rule: If we can't measure cost-per-retained-user, we don't run it.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 11. CREATIVES -->
+<!-- ══════════════════════════════════════════ -->
+<section id="creatives">
+  <div class="sec-label">11 · Content Strategy</div>
+  <h2 class="sec-title">What We Actually Post</h2>
+  <p class="sec-sub">The content ratio: 60% product demo · 30% UGC/social proof · 10% brand story. Here are the six content formats — always in rotation.</p>
+
+  <div class="creative-grid">
+    <div class="creative-card">
+      <div class="cc-top" style="background:linear-gradient(135deg,#E53935,#880e4f)">
+        🫙➡️📱➡️🍜
+        <span class="cc-label">Demo</span>
+      </div>
+      <div class="cc-bot">
+        <h4>The Swipe Mechanic</h4>
+        <p>Open fridge → scan pantry → 5 recipe cards appear → swipe → cook. 15–30 seconds. No voiceover needed. The mechanic is the content.</p>
+        <span class="cc-type ct-brand">Product Demo · 60%</span>
+      </div>
+    </div>
+    <div class="creative-card">
+      <div class="cc-top" style="background:linear-gradient(135deg,#F59E0B,#e65100)">
+        🎬➡️😮➡️✅
+        <span class="cc-label">Story Arc</span>
+      </div>
+      <div class="cc-bot">
+        <h4>"7 Days of AI Cooking"</h4>
+        <p>Creator-led story. Hook → skepticism → first swipe → reaction to AI video → day 7 streak → reward drop. Authentic, imperfect, real.</p>
+        <span class="cc-type ct-ugc">UGC · Influencer</span>
+      </div>
+    </div>
+    <div class="creative-card">
+      <div class="cc-top" style="background:linear-gradient(135deg,#1565c0,#004d40)">
+        ⭐➡️🔥➡️🎁
+        <span class="cc-label">Reward</span>
+      </div>
+      <div class="cc-bot">
+        <h4>Streak & Reward Reveal</h4>
+        <p>Day-7 streak hits. Stars pile up. Grocery credit drops. A shareable dopamine moment. This is the most saved and shared format.</p>
+        <span class="cc-type ct-brand">Product Demo · Viral</span>
+      </div>
+    </div>
+    <div class="creative-card">
+      <div class="cc-top" style="background:linear-gradient(135deg,#2e7d32,#1b5e20)">
+        🥘📸💬
+        <span class="cc-label">UGC</span>
+      </div>
+      <div class="cc-bot">
+        <h4>"I Made This" Reposts</h4>
+        <p>Real users cooking real Plateful meals. Repost to Stories with credit. Ask for permission. These convert 4× better than brand-created content.</p>
+        <span class="cc-type ct-ugc">UGC · 30%</span>
+      </div>
+    </div>
+    <div class="creative-card">
+      <div class="cc-top" style="background:linear-gradient(135deg,#6a1b9a,#1565c0)">
+        🤖✨🍳
+        <span class="cc-label">AI Video</span>
+      </div>
+      <div class="cc-bot">
+        <h4>AI Cook-Along Clip</h4>
+        <p>Show the AI-generated cook-along video generating in real time. The "wow" moment is the generation itself — screen record it. This has no competitor.</p>
+        <span class="cc-type ct-ai">AI Content · Unique</span>
+      </div>
+    </div>
+    <div class="creative-card">
+      <div class="cc-top" style="background:linear-gradient(135deg,#c62828,#e65100)">
+        ❓🙋💡
+        <span class="cc-label">Problem</span>
+      </div>
+      <div class="cc-bot">
+        <h4>"It's 6pm. What Now?"</h4>
+        <p>Hook: real pain. "It's 6pm. You're tired. You have random stuff in the fridge. Here's how Plateful handled this exact moment." Relatable, solves a real thing.</p>
+        <span class="cc-type ct-brand">Brand Story · 10%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- UGC vs AI verdict -->
+  <div style="margin-top:24px">
+    <div class="split-card" style="border-radius:var(--r);overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06)">
+      <div class="split-half ugc-side">
+        <h4>✅ UGC First</h4>
+        <ul>
+          <li>Real people cooking = highest trust</li>
+          <li>Algorithm rewards authentic saves/shares</li>
+          <li>Costs almost nothing (just ask users)</li>
+          <li>Impossible for competitors to replicate</li>
+          <li>Converts 4× better than brand content</li>
+        </ul>
+      </div>
+      <div class="split-half ai-side">
+        <h4>🤖 AI Content — When To Use It</h4>
+        <ul>
+          <li>Showing the AI video generation itself</li>
+          <li>Scaling recipe imagery for feed posts</li>
+          <li>Consistent product demo visuals</li>
+          <li>A/B testing different creative angles</li>
+          <li>Filling gaps between UGC pieces</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict">
+      <p>The verdict: <strong>Lead with UGC for trust, use AI content for scale.</strong> Never make your feed look AI-generated — the warmth of real cooking is the whole point of Plateful. AI content fills gaps and demos features. UGC wins hearts.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 12. DATA -->
+<!-- ══════════════════════════════════════════ -->
+<section id="data">
+  <div class="sec-label">12 · Market Data & Insights</div>
+  <h2 class="sec-title">Why This Plan Works</h2>
+  <p class="sec-sub">The numbers that shaped every decision in this document.</p>
+
+  <div class="data-grid">
+    <div class="data-card">
+      <h4>📊 Market Opportunity</h4>
+      <div class="bar-row">
+        <div class="bar-item">
+          <div class="bar-label"><span>US recipe app market</span><span>$210M</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--red)"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Global market 2033 projected</span><span>$3.5B</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:90%;background:var(--orange)"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Displaced users (Yummly+Allrecipes)</span><span>20M+</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:85%;background:#2e7d32"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Category CAGR</span><span>13%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:40%;background:#1565c0"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="data-card">
+      <h4>😓 The Pain Point Data</h4>
+      <div class="bar-row">
+        <div class="bar-item">
+          <div class="bar-label"><span>Say meal decisions are stressful</span><span>62%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:62%;background:var(--red)"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Avg time spent deciding what to eat/week</span><span>2h 32m</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:75%;background:var(--orange)"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Prefer app with pantry-first feature</span><span>78%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:78%;background:#2e7d32"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Want habit-building mechanic in app</span><span>81%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:81%;background:#1565c0"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="data-card">
+      <h4>📱 Content Performance Data</h4>
+      <div class="bar-row">
+        <div class="bar-item">
+          <div class="bar-label"><span>UGC converts vs brand content</span><span>4× better</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:80%;background:var(--red)"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Micro creator avg engagement rate</span><span>6–8%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:65%;background:var(--orange)"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Mega creator avg engagement rate</span><span>1–2%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:18%;background:#999"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Apple Search Ads conversion premium</span><span>2–3×</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:70%;background:#2e7d32"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DO / DON'T -->
+  <div style="margin-top:32px">
+    <div class="dodo-grid">
+      <div class="dodo-card do-card">
+        <h4>✅ Do This</h4>
+        <ul>
+          <li>Post consistently — 3 average posts beat 1 perfect post</li>
+          <li>Show the real app — the swipe, the AI video, the stars</li>
+          <li>Respond to every comment in the first hour</li>
+          <li>Repost UGC with credit — it makes the original poster love you</li>
+          <li>Track D7 retention above all other metrics</li>
+          <li>Use Platey and Blaze in every piece of content</li>
+          <li>Always have one clear CTA — one link, one action</li>
+          <li>Measure before you scale paid ads</li>
+        </ul>
+      </div>
+      <div class="dodo-card dont-card">
+        <h4>✗ Don't Do This</h4>
+        <ul>
+          <li>Name or diss competitor apps publicly</li>
+          <li>Run paid ads before you have D7 retention data</li>
+          <li>Chase follower count over engagement rate</li>
+          <li>Make influencer content sound scripted or salesy</li>
+          <li>Post without a CTA — every post needs a next step</li>
+          <li>Over-hype before launch — authentic beats manufactured</li>
+          <li>Make the feed look too AI-generated or polished</li>
+          <li>Skip Product Hunt — it's free and high-leverage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-logo">Plateful</div>
+  <p>Marketing Plan · April – July 2026 · Confidential</p>
+  <p style="margin-top:8px;font-size:13px">One objective. Three months. Ten thousand users.</p>
+  <div class="f-chips">
+    <span class="f-chip">Launch May 1</span>
+    <span class="f-chip">Organic First</span>
+    <span class="f-chip">UGC Over Ads</span>
+    <span class="f-chip">Micro Influencers</span>
+    <span class="f-chip">D7 Retention is North Star</span>
+    <span class="f-chip">Plateful AI, Inc.</span>
+  </div>
+</footer>
+
+<script>
+// Active nav link on scroll
+const sections = document.querySelectorAll('section[id], div[id="hero"]');
+const navLinks = document.querySelectorAll('.nav-links a');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+      if (active) { active.classList.add('active'); active.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'}); }
+    }
+  });
+}, { rootMargin: '-40% 0px -40% 0px' });
+sections.forEach(s => observer.observe(s));
+
+// Animate bars on scroll
+const bars = document.querySelectorAll('.bar-fill');
+const barObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.width = entry.target.style.width;
+    }
+  });
+}, { threshold: 0.3 });
+bars.forEach(b => { const w = b.style.width; b.style.width = '0'; setTimeout(() => barObserver.observe(b), 100); });
+
+// Reset bars when visible
+const barObserver2 = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const fills = entry.target.querySelectorAll('.bar-fill');
+      fills.forEach(f => {
+        const target = f.getAttribute('data-w') || f.style.width;
+        if (!f.getAttribute('data-w')) f.setAttribute('data-w', f.style.width);
+        f.style.width = '0';
+        setTimeout(() => { f.style.transition = 'width 1.2s ease'; f.style.width = target; }, 200);
+      });
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.data-card').forEach(c => barObserver2.observe(c));
+</script>
+</body>
+</html>
